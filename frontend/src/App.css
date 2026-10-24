@@ -1,0 +1,221 @@
+/* TrafficAI — screenshot-matched editorial overrides.
+   Rename this file to App.css; rename index_v2.css to index.css.
+   These selectors match your uploaded App.jsx without changing its behavior.
+   The screenshot's customer-health chart is not added by CSS. */
+
+#root { min-height: 100vh; min-width: 0; margin: 0; padding: 0; text-align: left; }
+#root > div { background: var(--editorial-canvas); color: var(--editorial-ink); }
+#root main { padding: 36px 32px; max-width: 1400px; margin-inline: auto; }
+#root h1, #root h2, #root h3 { color: var(--editorial-ink); letter-spacing: 0; }
+#root h2, #root h3 { font-family: var(--editorial-serif); font-weight: 400; }
+#root h2 { font-size: 30px; line-height: 1.2; }
+#root h3 { font-size: 20px; line-height: 1.3; }
+#root [class*="tracking-"] { letter-spacing: 0; }
+
+/* Sidebar: a quiet extension of the page rather than a blue panel. */
+#root aside { background: var(--editorial-canvas); border-color: var(--editorial-rule); padding: 32px 22px; }
+#root aside h1 { font-family: var(--editorial-serif); font-size: 23px; font-weight: 400; }
+#root aside > div:first-child { padding-bottom: 24px; border-bottom: 1px solid var(--editorial-rule); }
+#root aside > div:first-child > div:first-child { background: transparent; color: var(--editorial-ink); box-shadow: none; padding: 0; }
+#root aside p { color: var(--editorial-faint); }
+#root nav { gap: 8px; }
+#root nav button { border-radius: 0; background: transparent; color: var(--editorial-muted); box-shadow: none; font-size: 12px; padding: 12px 16px; }
+#root nav button:hover { color: var(--editorial-ink); background: transparent; }
+#root nav button[class*="bg-cyan-400/10"] { color: var(--editorial-ink); background: transparent; box-shadow: none; border-left: 2px solid var(--editorial-alarm); padding-left: 16px; }
+#root aside > .rounded-xl { background: var(--editorial-surface); border: 0; border-radius: 0; padding: 16px; }
+#root aside .refresh-button { min-height: 40px; border: 1px solid var(--editorial-muted); background: transparent; border-radius: 3px; color: var(--editorial-ink); font: 10px var(--editorial-mono); letter-spacing: .04em; text-transform: uppercase; }
+#root aside .refresh-button:hover { background: var(--editorial-panel); }
+
+/* Header and status: serif title, neutral hairlines, restrained labels. */
+#root main header { padding-bottom: 22px; border-bottom: 2px solid var(--editorial-strong-rule); }
+#root main header > div > p:first-child { font: 9px var(--editorial-mono); text-transform: uppercase; color: var(--editorial-faint); }
+#root main header > div > p:last-child { color: var(--editorial-muted); font-size: 12px; }
+#root main header > .rounded-full { border-color: var(--editorial-muted); background: transparent; color: var(--editorial-ink); padding: 7px 12px; font: 10px var(--editorial-mono); text-transform: uppercase; }
+
+/* Summary row: unframed figures separated by rules, as in the screenshot. */
+#root main > .grid:first-of-type { gap: 0; border-bottom: 2px solid var(--editorial-strong-rule); }
+#root main > .grid:first-of-type > div { background: transparent; border: 0; border-right: 1px solid var(--editorial-rule); border-radius: 0; padding: 20px 12px; text-align: center; }
+#root main > .grid:first-of-type > div:last-child { border-right: 0; }
+#root main > .grid:first-of-type > div > .absolute { display: none; }
+#root main > .grid:first-of-type > div > .flex { justify-content: center; }
+#root main > .grid:first-of-type > div > .flex > div { display: none; }
+#root main > .grid:first-of-type .text-sm { font: 9px var(--editorial-mono); text-transform: uppercase; color: var(--editorial-faint); }
+#root main > .grid:first-of-type .text-3xl { font: 38px/1.15 var(--editorial-sans); font-variant-numeric: tabular-nums; color: var(--editorial-ink); margin-top: 12px; overflow-wrap: anywhere; }
+#root main > .grid:first-of-type .text-xs { font: 10px/1.5 var(--editorial-mono); color: var(--editorial-muted); }
+#root main > .grid:first-of-type span.rounded-full { background: transparent; border: 0; border-radius: 0; padding: 0; color: var(--editorial-ink); font: 30px/1.45 var(--editorial-sans); }
+
+/* Feed and records: open sections, with the records on a flat tonal band. */
+#root main section.rounded-2xl { background: transparent; border: 0; border-radius: 0; box-shadow: none; padding: 20px 0; }
+#root main #violations { background: var(--editorial-surface); padding: 22px; }
+#root main #monitoring .aspect-video { background: var(--editorial-panel); border: 1px solid var(--editorial-rule); border-radius: 0; }
+#root main #monitoring .aspect-video svg { color: var(--editorial-faint); }
+#root main #monitoring .aspect-video p { color: var(--editorial-muted); }
+#root main #monitoring > div:first-child .rounded-full { color: var(--editorial-muted); background: transparent; font: 9px var(--editorial-mono); border: 1px solid var(--editorial-rule); }
+#root main #violations > .rounded-xl { background: transparent; border: 0; border-top: 1px solid var(--editorial-rule); border-bottom: 1px solid var(--editorial-rule); border-radius: 0; padding: 16px 0; }
+#root main #violations .max-h-56 > div { background: transparent; border: 0; border-bottom: 1px solid var(--editorial-rule); border-radius: 0; padding: 12px 0; }
+#root main #violations .text-3xl { color: var(--editorial-ink); font-weight: 400; font-variant-numeric: tabular-nums; }
+#root main #analytics { background: var(--editorial-surface); padding: 24px; }
+#root main #analytics .grid { gap: 0; }
+#root main #analytics .grid > div { background: transparent; border-radius: 0; border-right: 1px solid var(--editorial-rule); padding: 12px 20px; }
+#root main #analytics .grid > div:last-child { border-right: 0; }
+#root main #analytics .text-2xl { color: var(--editorial-ink); font-weight: 400; font-variant-numeric: tabular-nums; }
+#root main #analytics .h-1\.5 { height: 3px; background: var(--editorial-rule); border-radius: 0; }
+#root main #analytics .h-1\.5 > div { background: var(--editorial-muted); border-radius: 0; }
+
+/* Replace neon utility colors with the screenshot's neutral/rust palette. */
+#root .text-white, #root .text-slate-200, #root .text-slate-300 { color: var(--editorial-ink); }
+#root .text-slate-400 { color: var(--editorial-muted); }
+#root .text-slate-500, #root .text-slate-600 { color: var(--editorial-faint); }
+#root [class*="text-cyan-"], #root [class*="text-violet-"] { color: var(--editorial-muted); }
+#root [class*="text-rose-"] { color: var(--editorial-alarm); }
+#root [class*="text-emerald-"] { color: var(--editorial-ok); }
+#root [class*="text-amber-"] { color: var(--editorial-warning); }
+#root span[class*="bg-emerald-"] { background: var(--editorial-ok); box-shadow: none; }
+#root span[class*="bg-rose-"] { background: var(--editorial-alarm); box-shadow: none; }
+#root [role="alert"] { color: var(--editorial-alarm); background: var(--editorial-alarm-soft); border: 1px solid var(--editorial-alarm); border-radius: 0; font-size: 12px; }
+#root footer { color: var(--editorial-faint); border-color: var(--editorial-rule); font: 10px/1.6 var(--editorial-mono); }
+
+/* Layout alignment and responsive controls. */
+#root .dashboard-main {
+  width: 100%;
+  max-width: 1400px;
+  gap: 32px;
+}
+#root .dashboard-header {
+  row-gap: 16px;
+}
+#root .dashboard-nav {
+  align-items: stretch;
+  column-gap: 12px;
+  row-gap: 8px;
+}
+#root .dashboard-nav button {
+  min-height: 38px;
+  white-space: nowrap;
+}
+#root .dashboard-nav-button {
+  min-height: 44px;
+}
+#root .summary-grid,
+#root .feed-layout {
+  width: 100%;
+}
+#root .summary-grid {
+  row-gap: 16px;
+}
+#root .feed-layout {
+  align-items: start;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+#root .monitoring-card {
+  min-width: 0;
+}
+#root .feed-frame {
+  width: min(100%, 960px);
+  max-width: 100%;
+  margin-inline: auto;
+  aspect-ratio: 16 / 9;
+}
+#root .feed-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+#root .video-controls {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--editorial-rule);
+  background: var(--editorial-surface);
+}
+#root .video-select-group {
+  display: flex;
+  min-width: min(100%, 220px);
+  flex: 1 1 240px;
+  flex-direction: column;
+  gap: 6px;
+}
+#root .video-select-group label,
+#root .video-current {
+  color: var(--editorial-faint);
+  font: 10px var(--editorial-mono);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+#root .video-select-group select {
+  min-height: 40px;
+  width: 100%;
+  border: 1px solid var(--editorial-muted);
+  border-radius: 3px;
+  background: var(--editorial-panel);
+  color: var(--editorial-ink);
+  padding: 9px 12px;
+  font: 12px var(--editorial-sans);
+}
+#root .video-switch-button {
+  min-height: 40px;
+  border: 1px solid var(--editorial-strong-rule);
+  border-radius: 3px;
+  background: var(--editorial-ink);
+  color: var(--editorial-canvas);
+  padding: 9px 16px;
+  font: 10px var(--editorial-mono);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  transition: background .2s ease, color .2s ease, opacity .2s ease;
+}
+#root .video-switch-button:hover:not(:disabled) {
+  background: var(--editorial-focus);
+}
+#root .video-switch-button:disabled {
+  cursor: not-allowed;
+  opacity: .45;
+}
+#root .video-current {
+  align-self: center;
+  margin-left: auto;
+  white-space: nowrap;
+}
+#root .video-error {
+  color: var(--editorial-alarm);
+  font: 11px/1.5 var(--editorial-mono);
+}
+
+@media (min-width: 1280px) {
+  #root main > .grid:first-of-type .text-3xl { font-size: 32px; }
+}
+@media (max-width: 1279px) and (min-width: 640px) {
+  #root main > .grid:first-of-type > div:nth-child(2) { border-right: 0; }
+  #root main > .grid:first-of-type > div:nth-child(-n+2) { border-bottom: 1px solid var(--editorial-rule); }
+}
+@media (max-width: 767px) {
+  #root aside { padding: 20px; }
+  #root aside > div:first-child { padding-bottom: 16px; }
+  #root .dashboard-nav { margin-top: 16px; gap: 12px; padding-bottom: 4px; }
+  #root .dashboard-nav button { flex-shrink: 0; white-space: nowrap; }
+  #root nav button[class*="bg-cyan-400/10"] { border-left: 0; border-bottom: 1px solid var(--editorial-alarm); padding-left: 16px; }
+  #root aside > .rounded-xl { margin-top: 16px; }
+  #root main { padding: 24px 20px; }
+  #root .dashboard-main { gap: 24px; }
+  #root h2 { font-size: 27px; }
+  #root .feed-layout { row-gap: 32px; }
+  #root .video-controls { align-items: stretch; }
+  #root .video-switch-button { width: 100%; }
+  #root .video-current { width: 100%; margin-left: 0; }
+  #root main #analytics { padding: 20px 12px; }
+  #root main #analytics .grid > div { padding: 16px 10px; }
+  #root main #analytics .grid > div:nth-child(2) { border-right: 0; }
+  #root main #analytics .grid > div:nth-child(-n+2) { border-bottom: 1px solid var(--editorial-rule); }
+}
+@media (max-width: 639px) {
+  #root main > .grid:first-of-type > div { border-right: 0; border-bottom: 1px solid var(--editorial-rule); }
+  #root main > .grid:first-of-type > div:last-child { border-bottom: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #root *, #root *::before, #root *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

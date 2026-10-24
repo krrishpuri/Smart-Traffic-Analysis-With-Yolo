@@ -1,0 +1,43 @@
+/* TrafficAI — dark editorial theme matching the supplied screenshot.
+   Replace your index.css with this file and keep the revised App.css beside it.
+   Tailwind CSS v4 must remain configured in your existing project. */
+@import "tailwindcss";
+@import "./App.css";
+
+:root {
+  --editorial-canvas: #101012;
+  --editorial-surface: #171516;
+  --editorial-panel: #121214;
+  --editorial-ink: #e5e4e2;
+  --editorial-muted: #999593;
+  --editorial-faint: #75716f;
+  --editorial-rule: #393637;
+  --editorial-strong-rule: #aaa6a3;
+  --editorial-alarm: #b96b50;
+  --editorial-alarm-soft: #b96b5014;
+  --editorial-ok: #9caa98;
+  --editorial-warning: #ac9582;
+  --editorial-focus: #ddd8d3;
+  --editorial-selection: #b96b5040;
+  --editorial-serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --editorial-sans: "Work Sans", Arial, sans-serif;
+  --editorial-mono: "IBM Plex Mono", "Courier New", monospace;
+  color-scheme: dark;
+  font-family: var(--editorial-sans);
+  background: var(--editorial-canvas);
+  color: var(--editorial-ink);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html { min-width: 320px; -webkit-text-size-adjust: 100%; }
+body { margin: 0; min-width: 320px; min-height: 100vh; overflow-x: hidden; background: var(--editorial-canvas); }
+* { box-sizing: border-box; scrollbar-width: thin; scrollbar-color: var(--editorial-rule) transparent; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .5; }
+img { max-width: 100%; }
+::selection { background: var(--editorial-selection); color: var(--editorial-ink); }
+:focus-visible { outline: 2px solid var(--editorial-focus); outline-offset: 4px; }
